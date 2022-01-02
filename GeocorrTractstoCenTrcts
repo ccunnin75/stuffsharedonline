@@ -1,4 +1,4 @@
-/** Stata code to convert geocorr tracts to normal tracts in stata ***/
+/** Stata code to convert geocorr tracts to normal string tracts */
 
 gen double tract2=tract*100
 gen double CensusTractn=county*1000000+tract2
