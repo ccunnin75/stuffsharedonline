@@ -1,0 +1,6 @@
+/** Stata code to convert geocorr tracts to normal tracts in stata ***/
+
+gen double tract2=tract*100
+gen double CensusTractn=county*1000000+tract2
+format CensusTractn %11.0f
+gen str11 CensusTract=strofreal(CensusTractn,"%11.0f")
